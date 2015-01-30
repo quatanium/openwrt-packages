@@ -1,0 +1,11 @@
+diff --git a/leveldb/db/db_iter.cc b/leveldb/db/db_iter.cc
+--- a/leveldb/db/db_iter.cc
++++ b/leveldb/db/db_iter.cc
+@@ -13,6 +13,7 @@
+ #include "util/logging.h"
+ #include "util/mutexlock.h"
+ #include "util/random.h"
++#include <unistd.h>
+ 
+ namespace leveldb {
+ 

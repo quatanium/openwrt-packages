@@ -1,0 +1,14 @@
+diff -Naur old/subprocess32.py new/subprocess32.py
+--- old/subprocess32.py	2014-04-23 08:05:07.000000000 +0000
++++ new/subprocess32.py	2014-04-24 09:53:46.256676690 +0000
+@@ -1503,7 +1503,9 @@
+
+                             # This exitcode won't be reported to applications
+                             # so it really doesn't matter what we return.
+-                            os._exit(255)
++                            finally:
++                                os.close(errpipe_write)
++                                os._exit(255)
+
+                         # Parent
+                         if gc_was_enabled:
