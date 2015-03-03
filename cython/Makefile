@@ -13,7 +13,7 @@ PKG_NAME:=Cython
 PKG_VERSION:=0.22
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE:=cython-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://pypi.python.org/packages/source/C/$(PKG_NAME)/
 PKG_MD5SUM:=1ae25add4ef7b63ee9b4af697300d6b6
 PKG_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)-$(PKG_VERSION)/
