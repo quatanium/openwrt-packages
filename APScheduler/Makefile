@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=APScheduler
-PKG_VERSION:=3.0.1
+PKG_VERSION:=3.0.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/A/APScheduler/
-PKG_MD5SUM:=7c3687b3dcd645fe9df48e34eb7a7592
+PKG_MD5SUM:=fc2bda1582c59bc275d6d636795397d3
 PKG_BUILD_DEPENDS:=python python-setuptools
 
 include $(INCLUDE_DIR)/package.mk
