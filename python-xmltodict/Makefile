@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=xmltodict
-PKG_VERSION:=0.9.0
+PKG_VERSION:=0.9.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/x/xmltodict/
-PKG_MD5SUM:=3dee8f1a5172315119051a3854596244
+PKG_MD5SUM:=ab17e53214a8613ad87968e9674d75dd
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
