@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=requests
-PKG_VERSION:=2.6.0
+PKG_VERSION:=2.6.1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/r/requests/
-PKG_MD5SUM:=25287278fa3ea106207461112bb37050
+PKG_MD5SUM:=da6e487f89e6a531699b7fd97ff182af
 PKG_BUILD_DEPENDS:=python python-openssl
 
 include $(INCLUDE_DIR)/package.mk
