@@ -11,7 +11,7 @@ PKG_NAME:=tzlocal
 PKG_VERSION:=1.1.3
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).zip
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/t/tzlocal/
 PKG_MD5SUM:=0e643c4b0e43ae72002562b816606ac4
 PKG_BUILD_DEPENDS:=python python-setuptools
