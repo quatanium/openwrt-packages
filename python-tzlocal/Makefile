@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tzlocal
-PKG_VERSION:=1.1.3
+PKG_VERSION:=1.2
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/t/tzlocal/
-PKG_MD5SUM:=0e643c4b0e43ae72002562b816606ac4
+PKG_MD5SUM:=2e36ceb1260bf1233ed2f018a1df536e
 PKG_BUILD_DEPENDS:=python python-setuptools
 
 include $(INCLUDE_DIR)/package.mk

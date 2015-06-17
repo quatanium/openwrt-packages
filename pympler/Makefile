@@ -8,15 +8,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=pympler
-PKG_REV:=88e8f5824ba2a6784b6111297427075e34e16096
-PKG_VERSION:=0.4
+PKG_VERSION:=0.4.1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/pympler/pympler.git
-PKG_SOURCE_VERSION:=$(PKG_REV)
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE_URL:=https://pypi.python.org/packages/source/p/pympler/
+PKG_MD5SUM:=2d54032a6da91ff438f48d5f36b719a6
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -26,7 +24,7 @@ define Package/pympler
 	CATEGORY:=Languages
 	SUBMENU:=Python
 	TITLE:=pympler
-	URL:=https://github.com/pympler/pympler.git
+	URL:=http://pythonhosted.org/Pympler/
 	DEPENDS:=+python
 endef
 

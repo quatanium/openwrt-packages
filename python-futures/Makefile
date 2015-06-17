@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=futures
-PKG_VERSION:=2.2.0
+PKG_VERSION:=3.0.3
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/f/futures/
-PKG_MD5SUM:=310e446de8609ddb59d0886e35edb534
+PKG_MD5SUM:=32171f72af7e80c266310794adc4db46
 PKG_BUILD_DEPENDS:=python python-setuptools
 
 include $(INCLUDE_DIR)/package.mk

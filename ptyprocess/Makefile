@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ptyprocess
-PKG_VERSION:=0.4
+PKG_VERSION:=0.5
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/p/ptyprocess/
-PKG_MD5SUM:=d29b8bfd7d2df4d9e4a0f87aafe59018
+PKG_MD5SUM:=0d1ecfba622cb4e35ee157c38de18eae
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk

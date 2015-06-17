@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=setuptools
-PKG_VERSION:=15.1
+PKG_VERSION:=17.1.1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://pypi.python.org/packages/source/s/$(PKG_NAME)/
-PKG_MD5SUM:=10407f6737d8dc37e5310e68c1f1f6ec
+PKG_MD5SUM:=7edec6cc30aca5518fa9bad42ff0179b
 PKG_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)-$(PKG_VERSION)/
 
 HOST_BUILD_DEPENDS:=python
