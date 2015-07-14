@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/s/six/
 PKG_MD5SUM:=476881ef4012262dfc8adc645ee786c4
-PKG_BUILD_DEPENDS:=python python-setuptools
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -33,10 +33,7 @@ define Package/python-six/description
 endef
 
 define Build/Compile
-	$(call Build/Compile/PyMod,., \
-		install --prefix=/usr --root=$(PKG_INSTALL_DIR), \
-		PYTHONPATH=$(PYTHON_LIB_DIR):$(STAGING_DIR_ROOT)/$(PYTHON_PKG_DIR); \
-		)
+	$(call Build/Compile/PyMod,,install --prefix=/usr --root=$(PKG_INSTALL_DIR))
 endef
 
 define Package/python-six/install

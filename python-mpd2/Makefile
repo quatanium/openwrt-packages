@@ -15,7 +15,7 @@ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://pypi.python.org/packages/source/p/$(PKG_NAME)/
 PKG_MD5SUM:=d891c3313011dbc6b294c2abf8b87da6
 PKG_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)-$(PKG_VERSION)/
-PKG_BUILD_DEPENDS:=python python-setuptools
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -34,10 +34,7 @@ define Package/python-mpd2/description
 endef
 
 define Build/Compile
-	$(call Build/Compile/PyMod,., \
-		install --prefix=/usr --root=$(PKG_INSTALL_DIR), \
-		PYTHONPATH=$(PYTHON_LIB_DIR):$(STAGING_DIR_ROOT)/$(PYTHON_PKG_DIR); \
-		)
+	$(call Build/Compile/PyMod,,install --prefix=/usr --root=$(PKG_INSTALL_DIR))
 endef
 
 define Package/python-mpd2/install

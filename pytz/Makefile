@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/p/pytz/
 PKG_MD5SUM:=417a47b1c432d90333e42084a605d3d8
-PKG_BUILD_DEPENDS:=python python-setuptools
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -33,10 +33,7 @@ define Package/pytz/description
 endef
 
 define Build/Compile
-	$(call Build/Compile/PyMod,., \
-		install --prefix=/usr --root=$(PKG_INSTALL_DIR), \
-		PYTHONPATH=$(PYTHON_LIB_DIR):$(STAGING_DIR_ROOT)/$(PYTHON_PKG_DIR); \
-		)
+	$(call Build/Compile/PyMod,,install --prefix=/usr --root=$(PKG_INSTALL_DIR))
 endef
 
 define Package/pytz/install

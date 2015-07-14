@@ -29,7 +29,7 @@ define Package/cython
   CATEGORY:=Languages
   TITLE:=cython
   URL:=http://www.cython.org
-  DEPENDS:=+python-mini
+  DEPENDS:=+python
 endef
 
 define Package/cython/description

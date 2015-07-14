@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/r/requests/
 PKG_MD5SUM:=29b173fd5fa572ec0764d1fd7b527260
-PKG_BUILD_DEPENDS:=python python-openssl
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -25,7 +25,7 @@ define Package/python-requests
 	SUBMENU:=Python
 	TITLE:=python-requests
 	URL:=https://pypi.python.org/pypi/requests
-	DEPENDS:=+python python-openssl
+	DEPENDS:=+python
 endef
 
 define Package/python-requests/description

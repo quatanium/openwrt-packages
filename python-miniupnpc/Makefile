@@ -22,27 +22,6 @@ PKG_INSTALL:=1
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
-define Package/miniupnpc/Default
-  TITLE:=Lightweight UPnP
-  URL:=http://miniupnp.tuxfamily.org/
-endef
-
-define Package/miniupnpc
-  $(call Package/miniupnpc/Default)
-  SECTION:=net
-  CATEGORY:=Network
-  SUBMENU:=Firewall
-  TITLE+= client
-  DEPENDS:=+libminiupnpc
-endef
-
-define Package/libminiupnpc
-  $(call Package/miniupnpc/Default)
-  SECTION:=libs
-  CATEGORY:=Libraries
-  TITLE+= library
-endef
-
 define Package/python-miniupnpc
 	SECTION:=lang-python
 	CATEGORY:=Languages
@@ -74,18 +53,6 @@ define Build/InstallDev
 		$(1)/usr/lib/
 endef
 
-define Package/miniupnpc/install
-	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/upnpc $(1)/usr/bin/
-endef
-
-define Package/libminiupnpc/install
-	$(INSTALL_DIR) $(1)/usr/lib
-	$(INSTALL_BIN) \
-		$(PKG_INSTALL_DIR)/usr/lib/libminiupnpc.so.* \
-		$(1)/usr/lib/
-endef
-
 define Build/Compile
 	$(call Build/Compile/Default)
 	$(call Build/Compile/PyMod,,install --prefix=/usr --root=$(PKG_INSTALL_DIR))
@@ -99,5 +66,3 @@ define Package/python-miniupnpc/install
 endef
 
 $(eval $(call BuildPackage,python-miniupnpc))
-$(eval $(call BuildPackage,miniupnpc))
-$(eval $(call BuildPackage,libminiupnpc))

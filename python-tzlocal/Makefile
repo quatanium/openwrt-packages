@@ -14,7 +14,7 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/t/tzlocal/
 PKG_MD5SUM:=2e36ceb1260bf1233ed2f018a1df536e
-PKG_BUILD_DEPENDS:=python python-setuptools
+PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
@@ -33,10 +33,7 @@ define Package/python-tzlocal/description
 endef
 
 define Build/Compile
-	$(call Build/Compile/PyMod,., \
-		install --prefix=/usr --root=$(PKG_INSTALL_DIR), \
-		PYTHONPATH=$(PYTHON_LIB_DIR):$(STAGING_DIR_ROOT)/$(PYTHON_PKG_DIR); \
-		)
+	$(call Build/Compile/PyMod,,install --prefix=/usr --root=$(PKG_INSTALL_DIR))
 endef
 
 define Package/python-tzlocal/install
