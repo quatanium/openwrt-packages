@@ -25,7 +25,7 @@ define Package/APScheduler
 	SUBMENU:=Python
 	TITLE:=APScheduler
 	URL:=https://pypi.python.org/pypi/APScheduler
-	DEPENDS:=+python python-tzlocal python-six python-futures pytz
+	DEPENDS:=+python
 endef
 
 define Package/APScheduler/description

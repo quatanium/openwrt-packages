@@ -27,7 +27,7 @@ define Package/pexpect
 	SUBMENU:=Python
 	TITLE:=pexpect
 	URL:=https://github.com/quatanium/pexpect
-	DEPENDS:=+python ptyprocess
+	DEPENDS:=+python
 endef
 
 define Package/pexpect/description
