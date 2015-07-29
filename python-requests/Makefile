@@ -25,7 +25,7 @@ define Package/python-requests
 	SUBMENU:=Python
 	TITLE:=python-requests
 	URL:=https://pypi.python.org/pypi/requests
-	DEPENDS:=+python python-openssl
+	DEPENDS:=+python
 endef
 
 define Package/python-requests/description
