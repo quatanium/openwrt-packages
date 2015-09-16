@@ -1,0 +1,22 @@
+diff --git a/setup.py b/setup.py
+index d4f4d89..8744383 100644
+--- a/setup.py
++++ b/setup.py
+@@ -3,6 +3,7 @@
+ # Copyright (c) Arni Mar Jonsson.
+ # See LICENSE for details.
+ 
++import os
+ import sys
+ 
+ try:
+@@ -10,6 +11,9 @@ try:
+ except ImportError:
+ 	from distutils.core import setup, Extension
+ 
++os.environ["CC"] = "mips-openwrt-linux-uclibc-gcc"
++os.environ["CXX"] = "mips-openwrt-linux-uclibc-gcc"
++
+ extra_compile_args = ['-I./leveldb/include', '-fPIC', '-Wall', '-g2', '-D_GNU_SOURCE', '-O2', '-DNDEBUG']
+ extra_link_args = ['-L./leveldb', '-Bstatic', '-lleveldb', '-L./snappy-read-only/.libs/', '-Bstatic', '-lsnappy']
+ 
