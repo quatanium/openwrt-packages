@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=six
-PKG_VERSION:=1.9.0
+PKG_VERSION:=1.10.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/s/six/
-PKG_MD5SUM:=476881ef4012262dfc8adc645ee786c4
+PKG_MD5SUM:=34eed507548117b2ab523ab14b2f8b55
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk

@@ -10,12 +10,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=Cython
-PKG_VERSION:=0.23.1
+PKG_VERSION:=0.23.3
 PKG_RELEASE:=1
 
 PKG_SOURCE:=Cython-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://pypi.python.org/packages/source/C/$(PKG_NAME)/
-PKG_MD5SUM:=db3c5b365e1c3f71c7cd90e96473a3ab
+PKG_MD5SUM:=813df20f7ce5f00e60568e0371fbd07c
 PKG_BUILD_DIR:=$(BUILD_DIR_HOST)/$(PKG_NAME)-$(PKG_VERSION)/
 
 PKG_BUILD_DEPENDS:=python

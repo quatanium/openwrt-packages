@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=WebSocket-for-Python
-PKG_REV:=de17518ffa2e99491088f5e2770703d3959d8741
+PKG_REV:=d5cfa7b2ab7510c303f6745335accf994a11f0bc
 PKG_VERSION:=0.3.4
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/quatanium/WebSocket-for-Python.git

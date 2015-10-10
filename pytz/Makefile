@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=pytz
-PKG_VERSION:=2015.4
+PKG_VERSION:=2015.6
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://pypi.python.org/packages/source/p/pytz/
-PKG_MD5SUM:=417a47b1c432d90333e42084a605d3d8
+PKG_MD5SUM:=ff047a16dafeaa895bedef80a74c3728
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk

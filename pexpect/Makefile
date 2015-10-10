@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=pexpect
-PKG_REV:=3adb0b1a83d67459f50d5caa0b4b2900a85c439f
-PKG_VERSION:=4.0
-PKG_RELEASE:=3
+PKG_REV:=3f28bcd6f2a9cc41c3dd63a5b7363ed73ebc3d88
+PKG_VERSION:=4.0.1
+PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/quatanium/pexpect.git
